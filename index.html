@@ -4,10 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Battle Blaze</title>
-  <link rel="icon" href="https://i.ibb.co/r2k1v6x/money.jpg">
+  <link rel="icon" href="https://i.ibb.co/xt02R62d/IMG-20241029-WA0015.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
   <link rel="canonical" href="https://battleblazeorg.netlify.app/">
   <meta name="description" content="Join Battle Blaze – the premier esports platform for competitive gaming. Participate in paid tournaments, win real money, and experience seamless performance. Download now!">
-  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+ 
   <!-- Structured Data -->
   <script type="application/ld+json">
   {
@@ -28,16 +32,31 @@
     }
   }
   </script>
+   <script>
+  var swiper1 = new Swiper(".mySwiper", {
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  direction: 'horizontal',// Add this option
+});
+  </script>
 
   <!-- Social Media Meta Tags -->
   <meta property="og:title" content="Battle Blaze - Competitive Esports Tournaments">
   <meta property="og:description" content="Play tournaments, win real money, and withdraw instantly.">
-  <meta property="og:image" content="https://i.ibb.co/r2k1v6x/money.jpg">
+  <meta property="og:image" content="https://i.ibb.co/xt02R62d/IMG-20241029-WA0015.jpg">
   <meta property="og:url" content="https://battleblazeorg.netlify.app/">
   <meta name="twitter:card" content="summary_large_image">
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -51,7 +70,7 @@
   <div id="head">
     <div id="headdownloa">
       <div id="sticky">
-        <img id="applogo" src="https://i.ibb.co/r2k1v6x/money.jpg" alt="App Logo">
+        <img id="applogo" src="https://i.ibb.co/xt02R62d/IMG-20241029-WA0015.jpg" alt="App Logo">
       </div>
       <h1 id="divhead">Battle Blaze</h1>
       <p id="divp">
@@ -62,7 +81,7 @@
         DOWNLOAD APP
       </button>
       <br><br><br>
-      <img id="biglogo" src="https://i.ibb.co/r2k1v6x/money.jpg" alt="Big Logo" loading="lazy">
+      <img id="biglogo" src="https://i.ibb.co/xt02R62d/IMG-20241029-WA0015.jpg" alt="Big Logo" loading="lazy">
     </div>
   </div>
 
@@ -101,17 +120,43 @@
     </div>
   </div>
 
+  
+  
+
   <br><br><br>
-  <h2 class="abouth">App Screenshots</h2>
-  <h3 class="symbols">───♦♦♦───</h3>
-  <div class="image-gallery">
-    <img class="screenshots" src="https://i.ibb.co/Lx0HCPV/IMG-20250102-WA0044.jpg" alt="Home" loading="lazy">
-    <img class="screenshots" src="https://i.ibb.co/z4k7wjz/IMG-20250102-WA0045.jpg" alt="Matches" loading="lazy">
-    <img class="screenshots" src="https://i.ibb.co/6rbYGTg/IMG-20250102-WA0046.jpg" alt="Join Match" loading="lazy">
-    <img class="screenshots" src="https://i.ibb.co/rkCRmYq/IMG-20250102-WA0047.jpg" alt="Add Money" loading="lazy">
-    <img class="screenshots" src="https://i.ibb.co/F5pCD1t/IMG-20250102-WA0049.jpg" alt="Refer" loading="lazy">
-    <img class="screenshots" src="https://i.ibb.co/YhfyVDm/IMG-20250102-WA0048.jpg" alt="Profile" loading="lazy">
-  </div>
+  <div class="slider">
+        <div class="list">
+            <div class="item">
+                <img src="https://i.ibb.co/vCJ71tT0/Screenshot-2025-04-19-09-28-07-28.jpg" alt="Home">
+            </div>
+            <div class="item">
+                <img src="https://i.ibb.co/Ld366pXC/Screenshot-2025-04-19-09-28-10-40.jpg" alt="Game Category">
+            </div>
+            <div class="item">
+                <img src="https://i.ibb.co/Mx9197dT/Screenshot-2025-04-19-09-28-14-09.jpg" alt="Earn">
+            </div>
+            <div class="item">
+                <img src="https://i.ibb.co/1YgLr8pK/Screenshot-2025-04-19-09-28-24-25.jpg" alt="Refer & Earn">
+            </div>
+            <div class="item">
+                <img src="https://i.ibb.co/8nPfwTJ6/Screenshot-2025-04-19-09-28-17-29.jpg" alt="Profile">
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <ul class="dots">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <script src="app.js"></script>
+ 
 
   <div id="downloaddiv">
     <br>
@@ -125,8 +170,6 @@
     <br>
   </div>
 
-  <h4>Developed With LOVE By</h4>
-  <a href="https://webifyweb.netlify.app/">Webify</a>
-
+  
 </body>
-</html>
+        </html>
